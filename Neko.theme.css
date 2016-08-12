@@ -12,9 +12,9 @@
     background-image: url("https://images6.alphacoders.com/646/646470.png") !important;
     background-size: cover !important;
 }
-.bda-backdrop {
-    background: url("https://images6.alphacoders.com/646/646470.png");
-    background-size: cover;
+.callout-backdrop {
+    opacity: 0.6 !important;
+    background-image: url(https://a.pomf.cat/cbufls.png) !important;
 }
 
 /* Main Chat */
@@ -48,6 +48,18 @@
     color: #afafff;
     width: 360px;
 }
+.theme-dark .chat .private-channel-call {
+    background-color: #8282ff;
+    background-image: url(https://a.pomf.cat/trztyz.png) !important;
+    box-shadow: none;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action {
+    background-color: #afafff !important;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
+    background-color: #8282ff !important;
+}
+
 .chat .empty-message h1 {
     font-weight: 600;
     color: #afafff;
@@ -914,18 +926,6 @@ a:link {
 .create-guild-container .action:hover.join .btn {
     background-color: #670101!important;
 }
-.create-guild-container .action.join .action-icon {
-    background: url("https://i.imgur.com/NTeGmsW.png") 50% no-repeat;
-    height: 78px;
-    background-size: 178.5px 78px;
-}
-.create-guild-container .action.create .action-icon {
-    background-image: url("https://i.imgur.com/QDY09EQ.png");
-    height: 78px;
-    background-size: 112px 78px;
-    background-repeat: no-repeat;
-    background-position: 55px 0px;
-}
 .create-guild-container {
     background-color: transparent;
 }
@@ -1087,13 +1087,7 @@ a:link {
 .channel-members .member .member-username {
     font-size: 14px;
 }
-.member-username-inner[data-reactid*="102180837625200640"]:after {
-    content: "CreamCheese";
-    color: #E81C4F;
-    margin-left: 0px;
-    font-weight: 900;
-    font-size: 120%;
-}
+
 .channel-members .avatar-small .status {
     border-color: rgba(0, 0, 0, 0.7) !important;
 }
@@ -1185,15 +1179,7 @@ a:link {
 .channel-members .member .member-activity {
     color: #e6e6fa;
 }
-/* takeout the ` to remove "playing"
-`.channel-members .member .member-activity {
-    visibility:collapse;
-    font-size:0px;
-}
-`.channel-members .member .member-activity strong {
-    visibility:visible;
-    font-size:11px;
-} */
+
 .user-popout .body .section .label {
     color: #afafff;
 }
@@ -1416,7 +1402,7 @@ a:link {
     border-right: 1px solid #afafff;
 }
 .protip .label {
-    color: #afafff;
+    display: none;
 }
 .slider-bar {
     background: #000000;
@@ -1439,7 +1425,6 @@ a:link {
 }
 
 
-/* Better Discord Settings */
 #bd-customcss-detach-container {
     position: absolute;
     width: 30%;
@@ -1478,7 +1463,8 @@ a:link {
 .fav {
     background-color: #9289D6;
 }
-/* Custome CSS */
+
+/* Custom CSS */
 .CodeMirror {
     font-family: monospace;
     height: 300px;
@@ -2251,11 +2237,11 @@ background-repeat: no-repeat;background-position:center;
 
 /* Blocked */
 
-.avatar-small[style*="201024430699315201"],
-.avatar-small[style*="201024430699315201"] + .member-inner{
+.avatar-small[style*="[insert member ID]"],
+.avatar-small[style*="[insert member ID]"] + .member-inner{
     display: none !important;
 }
-.message-group .comment [style*="201024430699315201"] {
+.message-group .comment [style*="[insert member ID]"] {
 	display: none !important;
 }
 
